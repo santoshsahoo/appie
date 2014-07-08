@@ -10,6 +10,7 @@ curl https://raw.githubusercontent.com/santoshsahoo/appie/master/appie > ~/bin/a
 appie helloapp
 
 ### App Structure
+```
 santoshsahoo@github.com:~ $ tree helloworld/
 helloworld/
 ├── art
@@ -38,3 +39,4 @@ helloworld/
             └── helloworld.js
 
 12 directories, 12 files
+```
