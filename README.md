@@ -4,10 +4,10 @@ appie
 Command line utility for common app/project creation. Some best practices are followed.
 
 ## Install
-curl https://raw.githubusercontent.com/santoshsahoo/appie/master/appie > ~/bin/appie; chmod +x ~/bin/appie
+`curl https://raw.githubusercontent.com/santoshsahoo/appie/master/appie > ~/bin/appie; chmod +x ~/bin/appie`
 
 ## Usage
-appie helloapp
+`appie helloapp`
 
 ### App Structure
 ```
