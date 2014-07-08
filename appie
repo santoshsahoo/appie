@@ -1,0 +1,42 @@
+#! /bin/sh
+
+echo "appie- The App Creator"
+
+if [ $1 ]; then
+  echo "Usage: appie name"
+  exit 1
+fi
+
+name=$1
+git init $name
+cd ./$name
+
+mkdir -p ./www/static/css
+mkdir ./www/static/js
+mkdir ./www/static/img
+mkdir ./www/static/font
+mkdir ./tmp
+mkdir ./build
+mkdir ./art
+mkdir ./database
+mkdir ./sass
+mkdir ./dev
+
+echo "/tmp" > ./.gitignore
+
+echo "<h1>Hello world $name</h1>" > ./www/index.html
+echo "User-agent: *" > ./www/robots.txt
+touch ./www/static/css/$name.css
+touch ./www/static/img/README
+touch ./www/static/font/README
+touch ./www/static/js/$name.js
+touch ./sass/$name.scss
+touch ./dev/README
+touch ./art/README
+touch ./database/$name.sql
+touch ./build/README
+touch ./tmp/README
+
+git add .
+git commit -a -m "Initialized $name using appie"
+cd ..
